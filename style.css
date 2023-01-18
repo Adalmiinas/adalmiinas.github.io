@@ -1,0 +1,161 @@
+body {
+  background-color: white;
+  display: grid;
+  gap: 1rem;
+}
+.grids {
+  padding: 10px;
+  border-radius: 8px;
+  height: auto;
+  margin: 10px;
+  min-height: 300px;
+  border-radius: 28px;
+  background: antiquewhite;
+}
+
+#image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#title {
+  background-color: black;
+  color: white;
+  grid-column: 1/4;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+#work,
+#bank,
+#laptops {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#workContainerButtons {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  justify-content: space-around;
+}
+
+#bank-btn,
+#work-btn,
+#repay-btn {
+  width: 100px;
+}
+
+#price,
+#laptopTitle {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+#info {
+  grid-column: 1/4;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+#loanTextContainer {
+  visibility: hidden;
+}
+
+#buy-btn {
+  display: none;
+  background-color: #4681f4;
+}
+
+#loan-btn {
+  background-color: #80669d;
+}
+
+#bank-btn {
+  background-color: #dd7973;
+}
+
+#work-btn {
+  background-color: #ffbd03;
+}
+
+#repay-btn {
+  display: none;
+  background-color: #5dbea3;
+}
+
+#payTextContainer,
+#loanTextContainer,
+#bankBalanceContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: larger;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+h1 {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+select {
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  height: 20px;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: large;
+}
+
+button {
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 50px;
+  line-height: 20px;
+  list-style: none;
+  margin-top: 1em;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  bottom: 0px;
+}
+
+@media only screen and (max-width: 800px) {
+  #title {
+    grid-column: 1/1;
+  }
+
+  #info {
+    grid-column: 1/1;
+    grid-row: 5/8;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .grids {
+    max-height: none;
+  }
+
+  #image {
+    max-width: 70%;
+    max-height: 70%;
+  }
+}

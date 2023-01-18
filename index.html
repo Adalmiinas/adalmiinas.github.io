@@ -1,1 +1,67 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Komputer Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="title" id="title">
+      <h1>Komputer Store</h1>
+    </section>
+    <!--Bank-->
+    <section class="grids" id="bank">
+      <h1>Joe Banker</h1>
+      <div id="bankBalanceContainer">
+        <p id="balanceText">Balance</p>
+        <p id="balanceAmount">0 Kr.</p>
+      </div>
+      <div id="loanTextContainer">
+        <p id="loanText">Outstanding loan</p>
+        <p id="loanAmount">0 Kr.</p>
+      </div>
+      <button id="loan-btn">Get a loan</button>
+    </section>
+    <!--Work-->
+    <section class="grids" id="work">
+      <h1>Work</h1>
+      <div id="payTextContainer">
+        <p id="payText">Pay</p>
+        <p id="workAmount">0 Kr.</p>
+      </div>
+      <div id="workContainerButtons">
+        <button id="bank-btn">Bank</button>
+        <button id="work-btn">Work</button>
+        <button id="repay-btn">Repay loan</button>
+      </div>
+    </section>
+    <!--Laptop selection-->
+    <section class="grids" id="laptops">
+      <h1>Laptops</h1>
+      <div>
+        <select name="laptops" id="laptopsSelection">
+          <option value="" disabled selected hidden>Choose Laptop...</option>
+        </select>
+        <h3>Features:</h3>
+        <p id="laptopSpecs"></p>
+      </div>
+    </section>
+    <!--Laptop info-->
+    <section class="grids" id="info">
+      <div id="imageContainer">
+        <img id="image" />
+      </div>
+      <div id="desContainer">
+        <h1 id="laptopTitle"></h1>
+        <p id="laptopDescription"></p>
+      </div>
+      <div id="buyContainer">
+        <p id="price"></p>
+        <button id="buy-btn">BUY NOW</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
